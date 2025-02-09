@@ -23,4 +23,11 @@ public class PedidoController {
         pedidoService.criaPedido(pedido);
         return pedido;
     }
+
+    @PutMapping("{id}")
+    public Pedido venderPedido(@PathVariable Integer id){
+        return pedidoService.venderPedido(id);
+
+
+    }
 }

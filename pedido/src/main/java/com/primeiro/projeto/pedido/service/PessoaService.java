@@ -1,6 +1,6 @@
 package com.primeiro.projeto.pedido.service;
 
-import com.primeiro.projeto.pedido.common.NaoExistenteException;
+import com.primeiro.projeto.pedido.common.exception.NaoExistenteException;
 import com.primeiro.projeto.pedido.model.Pessoa;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

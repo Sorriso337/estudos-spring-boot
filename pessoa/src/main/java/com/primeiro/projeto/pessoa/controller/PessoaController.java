@@ -22,7 +22,7 @@ public class PessoaController {
     }
 
     @GetMapping("{id}")
-    public Pessoa getPessoas(@PathVariable("id") Integer id){
+    public Pessoa getPessoaPorId(@PathVariable("id") Integer id){
         return pessoaRepository.getById(id);
     }
 

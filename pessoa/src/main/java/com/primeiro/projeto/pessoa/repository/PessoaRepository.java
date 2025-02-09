@@ -19,7 +19,7 @@ public class PessoaRepository {
     }
 
     public Pessoa getById(Integer id){
-        Pessoa pessoa= pessoas.get(id);
+        Pessoa pessoa = pessoas.get(id);
 
         if(pessoa == null){
             throw new NaoExistenteException("Pessoa inexistente");

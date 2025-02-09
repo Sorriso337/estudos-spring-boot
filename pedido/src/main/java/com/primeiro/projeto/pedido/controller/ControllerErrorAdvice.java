@@ -1,8 +1,6 @@
 package com.primeiro.projeto.pedido.controller;
 
-import com.primeiro.projeto.pedido.common.NaoExistenteException;
-import com.primeiro.projeto.pedido.model.Erro;
-import com.primeiro.projeto.pedido.common.NaoExistenteException;
+import com.primeiro.projeto.pedido.common.exception.NaoExistenteException;
 import com.primeiro.projeto.pedido.model.Erro;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;

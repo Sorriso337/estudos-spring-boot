@@ -1,6 +1,6 @@
 package com.primeiro.projeto.pedido.repository;
 
-import com.primeiro.projeto.pedido.common.NaoExistenteException;
+import com.primeiro.projeto.pedido.common.exception.NaoExistenteException;
 import com.primeiro.projeto.pedido.model.Pedido;
 import org.springframework.stereotype.Repository;
 
@@ -10,9 +10,9 @@ import java.util.Map;
 @Repository
 public class PedidoRepository {
 
-    private final static Map<Integer, Pedido> pedidos = new HashMap<>();
+    private static final  Map<Integer, Pedido> pedidos = new HashMap<>();
 
-    public static void criaPedido(Integer id, Pedido pedido){
+    public  void criaPedido(Integer id, Pedido pedido){
         pedidos.put(pedido.getId(),pedido);
     }
 
