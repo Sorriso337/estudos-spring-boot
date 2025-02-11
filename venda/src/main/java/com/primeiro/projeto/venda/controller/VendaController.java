@@ -1,7 +1,7 @@
 package com.primeiro.projeto.venda.controller;
 
-import com.primeiro.projeto.venda.model.Pessoa;
-import com.primeiro.projeto.venda.repository.PessoaRepository;
+import com.primeiro.projeto.venda.model.Venda;
+import com.primeiro.projeto.venda.repository.VendaRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,13 +15,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("venda")
 public class VendaController {
 
-    private final PessoaRepository pessoaRepository;
+    private final VendaRepository vendaRepository;
+
 
     @GetMapping("{id}")
-    public Pessoa getPessoaById(@PathVariable("id") Integer id){
+    public Venda getById(@PathVariable("id") String id){
         log.info("Chamada do endpoint");
         try {
-            return pessoaRepository.getPessoa(id);
+            return vendaRepository.getById(id);
         }
         catch (Exception error){
           //  log.error(error.getMessage(), error);

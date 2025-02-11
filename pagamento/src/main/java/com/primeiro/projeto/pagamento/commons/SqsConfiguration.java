@@ -1,4 +1,4 @@
-package com.primeiro.projeto.venda.commons;
+package com.primeiro.projeto.pagamento.commons;
 
 
 import io.awspring.cloud.sqs.operations.SqsTemplate;

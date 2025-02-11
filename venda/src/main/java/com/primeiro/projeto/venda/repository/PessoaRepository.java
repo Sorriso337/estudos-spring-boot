@@ -2,7 +2,6 @@ package com.primeiro.projeto.venda.repository;
 
 import com.primeiro.projeto.venda.model.Pessoa;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;
